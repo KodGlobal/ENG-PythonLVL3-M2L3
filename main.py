@@ -9,7 +9,7 @@ intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 user_responses = {}
-# Task 8 - create thepoints dictionary to save user points
+# Task 8 - create the points dictionary to save user points
 
 
 async def send_question(ctx_or_interaction, user_id):
@@ -27,7 +27,7 @@ async def send_question(ctx_or_interaction, user_id):
 
 @bot.event
 async def on_ready():
-    print(f'Logged in as {bot.user}!')
+    print(f'New login: {bot.user}!')
 
 
 @bot.event
